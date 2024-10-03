@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form-heading">
+        <h1>Hospital Form</h1>
+    </div>
+
+    <!-- Form HTML-->
+    <form id="msform">
+       <!--Patient form-->
+        <div>
+            <h1 class="form_heading"> Patient Form</h1>
+        </div><br>
+        <label for="PatientName">
+            <input type="text" name="Patient_Name" placeholder="Patient's Name">
+        </label>
+        <label for="DateAdmitted"> 
+            Admitted Date: <input type="date" name="Admitted_Date">
+        </label>
+        <label>
+            <input type="text" name=" Insurance" placeholder=" Insurance">
+        </label><br><br>
+
+    <!-- Doctor appointed to patient -->
+        <div>
+            <h1> Doctor appointed to the patient</h1>
+        </div><br>
+        <label for="DoctorName">
+            <input type="text" name="Doctor_Name" placeholder="Doctor's Name">
+        </label><br><br>
+        <label>
+            Specialization:
+            <select >
+                <option>----------</option>
+                <option value="Cardiology">Cardiology</option>
+                <option value="ENT">ENT</option>
+                <option value="Gynaecology">Gynaecology</option>
+                <option value="Orthopaedic">Orthopaedic</option>
+                <option value="Pediatrician">Pediatrician</option>
+                <option value="Neurology">Neurology</option>
+            </select>
+        </label><br><br>
+        <label >
+            Last appointment with patient:
+            <input type="date" name="last_date">
+        </label><br><br>
+
+    <!-- Test Prescribed -->
+        <div>
+            <h1> Test prescribed to patient</h1>
+        </div>
+        <label>
+            <input type="text" name="Test_Name" placeholder="Test Name">
+        </label><br><br>
+        <label>
+            <input type="text" name="test_id" value="Test-id">
+        </label><br><br>
+        <label>
+            Test date:
+            <input type="date" name="Test_date">
+        </label><br><br>
+        <label>
+            Test result:
+            <select>
+                <option value="Positive"> Positive</option>
+                <option value="Negative"> Negative</option>
+            </select>
+        </label>
+      </div><br>
+
+     <input type="submit" class="action-button">
+
+</body>
+</html>
